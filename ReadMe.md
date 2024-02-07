@@ -1,4 +1,4 @@
 ### DSA based on JS
 
 _References_:-
-[Chat GPT](https://chat.openai.com/)
+[Love Babbar](https://www.youtube.com/@LoveBabbar)
