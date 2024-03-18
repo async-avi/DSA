@@ -1,4 +1,6 @@
-### DSA based on JS
+### DSA progress
+
+#### Language - CPP
 
 _References_:-
-[Love Babbar](https://www.youtube.com/@LoveBabbar)
+[Striver](https://www.youtube.com/@striver_79)
