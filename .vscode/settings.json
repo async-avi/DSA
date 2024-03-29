@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "bitset": "cpp",
+    "chrono": "cpp",
+    "algorithm": "cpp",
+    "iostream": "cpp"
+  },
+  "cmake.configureOnOpen": true
+}
