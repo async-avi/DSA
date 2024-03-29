@@ -1,1 +1,1 @@
-Invalid number of marks
+Your grade is: A
