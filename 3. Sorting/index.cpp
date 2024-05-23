@@ -1,29 +1,44 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 using namespace std;
 
-int print2largest(int arr[], int n) {
-	    // code here
-	    int lar = arr[0];
-	    int scnd = - 1;
-	    for(int i = 1; i<n; i++){
-	        if(arr[i] > lar){
-	            lar = arr[i];
-	        }
-	    }
-	    
-	    for(int i = 0; i < n; i++){
-	        if(arr[i] > scnd && arr[i] < lar) scnd = arr[i];
-	    }
-	    
-	    return scnd;
-	}	
 
+//selection sort
+void selectionSort(int arr[], int n){
+	for(int i = 0; i < n - 1; i++){
+		for(int j = i + 1; j < n; j++){
+			if(arr[j] < arr[i]){
+				swap(arr[j], arr[i]);
+			}
+		}
+	}
+}
+
+//bubble sort
+
+void bubbleSort(int arr[], int n){
+	for(int i = n - 1; i >= 1; i--){
+		int didswap = 0;
+		for(int j = 0; j <= i - 1; j++){
+			if(arr[j] > arr[j + 1]){
+                swap(arr[j], arr[j + 1]);
+                didswap = 1;
+            }
+		}
+
+		if(didswap == 0) break;
+	}
+	
+}
 
 
 int main(){
-    int arr[5] = {5,6,7,1,2};
-    int res = print2largest(arr, 5);
+	int n;
+	cin >> n;
+	int arr[n];
 
-    cout << res << endl;
+	for(int i = 0; i < n; i++) cin >> arr[i];
+
+	bubbleSort(arr, n);
+	for(int i = 0; i < n; i++) cout << arr[i] << " ";
     return 0;
 }
