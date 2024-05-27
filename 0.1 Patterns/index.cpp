@@ -93,10 +93,39 @@ void reverseNumTriangle(int n){
     }
 }
 
+void charSquare(int n){
+  for(int i = 1; i <= n; i++){
+    for(int j = 1; j <= n; j++){
+        cout << char('A' + i - 1) << " ";
+    }
+    cout << endl;
+  }
+}
+
+void charSquareIncrement(int n){
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= n; j++){
+            cout << char('A' + j - 1) << " ";
+        }
+        cout << endl;
+    }
+}
+
+void charSquareIncrement2(int n){
+    int val = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            val+=1;
+            cout << char('A' + val - 1) << " ";
+        }
+
+        cout << endl;
+    }
+}
 
 int main(){
     int n;
     cin >> n;
-    reverseNumTriangle(n);
+    charSquareIncrement2(n);
     return 0;
 }
